@@ -1,0 +1,9 @@
+-there are just images 1604 => need augmentation: try rotation, shifting, horizontal and vertical flips 
+-classes are balanced (750/850) => ok
+-there are 2 channels => keras state-of-art models need 3 channels. It's possible to get 3rd channel by sum of other two
+-images have small resolution 75x75 and 2 classes => not very computationaly expensive?
+-some images are very noisy (nearly 5%) => it's ok to ignore them or handle it later
+-it's relatively easy to recognise large objects visually: ships have reflections and structured shape. 
+   Smaller objects are harder to recognise.
+-there's a data leakage! Many images can be accurately predicted only by inc_angle.=> ignore inc_angle
+    
