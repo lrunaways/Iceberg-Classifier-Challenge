@@ -1,4 +1,4 @@
--there are just images 1604 => need augmentation: try rotation, shifting, horizontal and vertical flips 
+-there are just 1604 images=> need augmentation: try rotation, shifting, horizontal and vertical flips 
 -classes are balanced (750/850) => ok
 -there are 2 channels => keras state-of-art models need 3 channels. It's possible to get 3rd channel by the sum of the other two
 -images have small resolution 75x75 and 2 classes => not very computationally expensive?
